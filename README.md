@@ -18,7 +18,7 @@ ApacheDS has been configured to use the provided LDIF:
 
 ## Usage
 
-By default the program uses configuration settings defined in the _application.yml_ file embedded into the project (jar file).
+By default programs use configuration settings defined in the _application.yml_ file embedded into the project (jar file).
 ```
 $ "C:\Program Files\Java\jre1.8.0_171\bin\java" -jar sample-ldap-login-1.0-SNAPSHOT.jar
 ```
