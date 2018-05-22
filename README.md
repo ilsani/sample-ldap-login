@@ -5,6 +5,7 @@ This repository contains 2 projects:
 - sample-ldap-login-totp
 
 _sample-ldap-login-base_ implements base requirements (login form to authenticate users through a LDAP server).
+_sample-ldap-login-totp_ implements bonus feature (OTP authentication). **NOTE**: OTP length (8 digits) and Hashing algorithm (SHA256) requirements have not been implemented. OTP length is 6 digits and Hashing algorithm is SHA1.
 
 ## Dev environment
 
