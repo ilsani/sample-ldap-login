@@ -2,18 +2,19 @@
 
 This repository contains 2 projects:
 - sample-ldap-login-base
-- sample-ldal-login-totp
+- sample-ldap-login-totp
 
 _sample-ldap-login-base_ implements base requirements (login form to authenticate users through a LDAP server).
 
 ## Dev environment
+
 - Microsoft Windows 10 Pro 32bit
 - java version "1.8.0_171" (build 1.8.0_171-b11)
 - ApacheDS - v. apacheds-2.0.0-M24 (http://directory.apache.org/apacheds/downloads.html)
 
 ApacheDS has been configured to use the provided LDIF:
-1- New Context Entry -> dc=myorg,dc=test
-2- Import LDIF file (_test.ldif_)
+1. New Context Entry -> dc=myorg,dc=test
+2. Import LDIF file (_test.ldif_)
 
 ## Usage
 
@@ -45,6 +46,7 @@ server:
 
 # LDAP settings
 # managerDn and managerPassword are the username/password used by the application to LDAP connections, as _system_ user.
+# if you use anonymous LDAP connection comment managerDn and managerPassword settings.
 ldap:
   #managerDn: uid=test1,ou=People,dc=myorg,dc=test
   #managerPassword: Password123!
