@@ -1,0 +1,11 @@
+
+app:
+  name: sample-ldap-login
+
+server:
+  port: 8080
+
+ldap:
+  #managerDn: uid=test1,ou=People,dc=myorg,dc=test
+  #managerPassword: Password123!
+  url: ldap://localhost:10389/dc=myorg,dc=test
