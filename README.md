@@ -20,16 +20,15 @@ ApacheDS has been configured to use the provided LDIF:
 
 By default programs use configuration settings defined in the _application.yml_ file embedded into the project (jar file).
 ```
-$ "C:\Program Files\Java\jre1.8.0_171\bin\java" -jar sample-ldap-login-1.0-SNAPSHOT.jar
+# "C:\Program Files\Java\jre1.8.0_171\bin\java" -jar sample-ldap-login-1.0-SNAPSHOT.jar
 ```
 
 if you would use another configuration file, you could specify its path with _--spring.config.location_ parameter.
-
 ```
-$ "C:\Program Files\Java\jre1.8.0_171\bin\java" -jar sample-ldap-login-1.0-SNAPSHOT.jar --spring.config.location="C:\tmp\sample-ldap-login\application.yml"
+# "C:\Program Files\Java\jre1.8.0_171\bin\java" -jar sample-ldap-login-1.0-SNAPSHOT.jar --spring.config.location="C:\tmp\sample-ldap-login\application.yml"
 ```
 
-Programs use Spring Framework, so it is also possible to overwrite only a single configuration parameter (See references for more details).
+Programs use Spring Framework, so more combination are allowed. (e.g  it is also possible to overwrite only a single configuration parameter). See references for more details.
 
 ## Default settings
 
