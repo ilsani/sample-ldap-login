@@ -78,8 +78,11 @@ Step bypass should be avoided thanks to Spring Security and its _User's Roles_ f
 
 ### Images
 
-![alt text](images/totp_001.png)
-![alt text](images/totp_002.png)
+_/login_:
+![](images/totp_001.png)
+
+_/qrcode_:
+![](images/totp_002.png)
 
 ## References
 - https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html
