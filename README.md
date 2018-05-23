@@ -43,6 +43,8 @@ If you would like overwrite embedded/default configuration file with a file in t
 
 Programs use Spring Framework, so more combination are allowed. (e.g it is also possible to overwrite only a single configuration parameter). See references for more details.
 
+When JAR program is running you could browse to `http://localhost:8080`.
+
 ## Default settings
 
 By default programs use settings defined in the _application.yml_ file embedded into the project (jar file).
@@ -65,7 +67,7 @@ ldap:
   url: ldap://localhost:10389/dc=myorg,dc=test
 ```
 
-# sample-ldap-login-totp
+## sample-ldap-login-totp
 
 This project implements login form to authenticate users through a LDAP server and the OTP authentication. In order to simply tests and implementation I created a simple POC that uses 3 web pages:
 1. _/login_: Login form with username/password
@@ -74,6 +76,10 @@ This project implements login form to authenticate users through a LDAP server a
 
 Step bypass should be avoided thanks to Spring Security and its _User's Roles_ feature used in `com.example.ldap.infrastructure.WebSecurityConfig`.
 
+### Images
+
+![alt text](images/totp_001.png)
+![alt text](images/totp_002.png)
 
 ## References
 - https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html
