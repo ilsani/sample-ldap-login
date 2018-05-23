@@ -81,7 +81,7 @@ Step bypass should be avoided thanks to Spring Security and its _User's Roles_ f
 _/login_:_
 ![](images/totp_001.png)
 
-_/qrcode_:_
+_/qrcode_:__
 ![](images/totp_002.png)
 
 ## References
