@@ -8,15 +8,13 @@ _sample-ldap-login-base_ implements base requirements (login form to authenticat
 
 _sample-ldap-login-totp_ implements bonus feature (OTP authentication).
 
-**NOTE**: _sample-ldap-login-totp_ has 2 different features from the specifications:
-1. OTP length. Request: 8 digits. Implemented: 6 digits
-2. Hashing algorithm. Request: SHA256. Implemented: is SHA1
-
 ## Dev environment
 
 - Microsoft Windows 10 Pro 32bit
 - java version "1.8.0_171" (build 1.8.0_171-b11)
 - ApacheDS - v. apacheds-2.0.0-M24 (http://directory.apache.org/apacheds/downloads.html)
+- Spring Framework (Spring boot 2.0.0-RELEASE)
+- FreeOTP Authenticator version 1.5 (17)
 
 ApacheDS has been configured to use the provided LDIF:
 1. New Context Entry -> dc=myorg,dc=test
@@ -29,12 +27,21 @@ By default programs use configuration settings defined in the _application.yml_ 
 # "C:\Program Files\Java\jre1.8.0_171\bin\java" -jar sample-ldap-login-1.0-SNAPSHOT.jar
 ```
 
-if you would use another configuration file, you could specify its path with _--spring.config.location_ parameter.
+If you would like use another configuration file, you could specify its path with _--spring.config.location_ parameter.
 ```
 # "C:\Program Files\Java\jre1.8.0_171\bin\java" -jar sample-ldap-login-1.0-SNAPSHOT.jar --spring.config.location="C:\tmp\sample-ldap-login\application.yml"
 ```
 
-Programs use Spring Framework, so more combination are allowed. (e.g  it is also possible to overwrite only a single configuration parameter). See references for more details.
+If you would like overwrite embedded/default configuration file with a file in the same folder of the JAR program you could place a file named _application.yml_ in its folder.
+```
+# dir
+  ... sample-ldap-login-1.0-SNAPSHOT.jar
+  ... application.yml
+  
+# "C:\Program Files\Java\jre1.8.0_171\bin\java" -jar sample-ldap-login-1.0-SNAPSHOT.jar
+```
+
+Programs use Spring Framework, so more combination are allowed. (e.g it is also possible to overwrite only a single configuration parameter). See references for more details.
 
 ## Default settings
 
