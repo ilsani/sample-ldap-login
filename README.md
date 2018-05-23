@@ -69,7 +69,7 @@ ldap:
 
 ## sample-ldap-login-totp
 
-This project implements login form to authenticate users through a LDAP server and the OTP authentication. In order to simply tests and implementation I created a simple POC that uses 3 web pages:
+This project implements login form to authenticate users through a LDAP server and the OTP authentication. In order to simplify tests and implementation I created a simple POC that uses 3 web pages:
 1. _/login_: Login form with username/password
 2. _/qrcode_: QR code visualization (each user has a secret) and TOTP code verification
 3. _/home_: Protected resource
