@@ -72,7 +72,7 @@ This project implements login form to authenticate users through a LDAP server a
 2. _/qrcode_: QR code visualization (each user has a secret) and TOTP code verification
 3. _/home_: Protected resource
 
-Step bypass should be avoided thanks to Spring Security and its _User's Roles_ features configured in `com.example.ldap.infrastructure.WebSecurityConfig`.
+Step bypass should be avoided thanks to Spring Security and its _User's Roles_ feature used in `com.example.ldap.infrastructure.WebSecurityConfig`.
 
 
 ## References
